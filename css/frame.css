@@ -1,0 +1,22 @@
+#header{
+	height: 20%;
+	background: black;
+}
+#container{
+	position: relative;
+}
+#left{
+	float: left;
+	width: 25%;
+	background: blue;
+}
+#center{
+	float: left;
+	width: 50%;
+	background: green;
+}
+#right{
+	float: left;
+	width: 25%;
+	background: gray;
+}

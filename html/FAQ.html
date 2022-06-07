@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CINEHUB-Watch the best & latest  movies, shows, motivational video and web series</title>
+	<link rel="icon" type="image/ico" href="../Image/cine hub.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/FAQ.css">
+	<link rel="stylesheet" type="text/css" href="../css/fontawesome.css">
+	<script src="../js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active');
+				$('nav').toggleClass('active');
+			});
+			$('#signin').click(function(){
+				$('.Signin').show();
+				$('.body').hide();
+			});	
+			$('.icon-signin').click(function(){
+				$('.Signin').hide();
+				$('.body').show();
+			});
+			$('#Registration').click(function(){
+				$('.Registration').show();
+				$('.body').hide();
+				$('.Signin').hide();
+			});
+			$('.icon-registration').click(function(){
+				$('.Registration').hide();
+				$('.body').show();
+			});
+			$('#Signin').click(function(){
+				$('.Signin').show();
+				$('.body').hide();
+				$('.Registration').hide();
+			});	
+			$('#searchlogo').click(function(){
+				$('.Search').show();
+				$('.body').hide();
+			});
+			$('.icon-search').click(function(){
+				$('.Search').hide();
+				$('.body').show();
+			});
+		});
+	</script>
+	<script>
+		function error_1(){
+			var password = document.getElementById("password").value;
+			var username = document.getElementById("id-1").value;
+			alert('Sign In\nUsername: '+username+'\nPassword: '+password);
+		}
+		function error_2(){
+			var password_1 = document.getElementById("password_1").value;
+			var password_2 = document.getElementById("password_2").value;
+			var username = document.getElementById("id-2").value;
+			var email = document.getElementById("email").value;
+			if (password_1==password_2){
+				alert('Your account have register\nUsername: '+username+'\nPassword: '+password_1+'\nEmail: '+email);
+			}else{
+				alert('Password are not same, Retype the password');
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="body">
+		<header>
+			<a id="searchlogo"><i class="fas fa-search fa-lg"></i></a>
+			<a href="Home.html"><img src="../Image/cine hub.png" id="logo"></a>
+			<div class="menu-toggle"></div>
+			<nav class="navbar">
+				<ul type="none">
+					<li><a href="Home.html" id="left-nav">HOME</a></li>
+					<li><a href="Movies.html" id="left-nav">MOVIES</a></li>
+					<li><a href="Shows.html" id="left-nav">SHOWS</a></li>
+					<li><a href="Webseries.html" id="left-nav">WEB SERIES</a></li>
+					<li><a href="Motivational.html" id="left-nav">MOTIVATIONAL</a></li>
+					<li><a id="signin"><i class="far fa-user-circle fa-lg" id="userlogo"></i>SIGN IN</a></li>
+					<div style="clear: both;"></div>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+		<div id="container">
+			<h1>Frequently Asked Questions</h1>
+			<h2>Managing Your Account</h2>
+				<p><strong>How do I access my Account?</strong></p>
+				<p id="ans">You need to Sign In on cineHub and then click on 'My Account' from the menu to access your account details.<br>You can view your registered email address.</p>
+				<p><strong>How do I sign out of my account?</strong></p>
+				<p id="ans">You can sign out of your account from the My Account page or from the menu. You will only be signed out of the current device. If you wish to sign out of other devices, you will need to sign out of them individually.</p>
+				<p><strong>How can I keep my CineHub account secure?</strong></p>
+				<p id="ans">Use a strong password and do not share it with anyone. Be aware of possible phishing attempts.</p>
+				<p><strong>I already have an account on Hotstar. Why am I unable to sign in with the same?</strong></p>
+				<p id="ans">If you created your account for the membership and are having trouble signing in, check the following:<br>1.You May Be Entering An Incorrect Password.<br>2.You May Have Made A Typo In Your Email Address When You Signed Up.<br>If you are still having trouble signing in, please write to us at contact@cinehub.com</p>
+			
+			<h2>Others</h2>	
+				<p><strong>The content doesn't play if I refresh my browser. Please help.</strong></p>
+				<p id="ans">If you can't seem to play any content, please check your internet connection. If that doesn't work, clear your browser cache. After that, if you still can't play anything, send us an email at contact@cinehub.com</p>
+				<p><strong>Error Message: Content Unavailable. Why can I not see the content?</strong></p>
+				<p id="ans">If you can't see content and you're using the website, refresh and clean your browser cache. If you're using the app, try restarting your phone. If nothing works, send us an email at contact@cinehub.com and we'll try to get this sorted for you.</p>
+				<p><strong>Is there a Mobile website available?</strong></p>
+				<p id="ans">why, yes, it is! Link: www.cinehub.com</p>
+				<p><strong>Is the streaming free! I'm getting a 403 error every time</strong></p>
+				<p id="ans">Most definitely free! Send us a screenshort and your issue by email to us at contact@cinehub.com and we'll try and fix this.</p>
+				<p><strong>Why is this specific video not working?</strong></p>
+				<p id="ans">Yikes! Mail us the video details to conact@cinehub.com and we'll try to get it to work. Stay away from spoilers while you wait!</p>
+				<p><strong>Why can't I share the content on my social media pages?</strong></p>
+				<p id="ans">If you can't share content on your social media pages, restart your phone. If that doesn't solve the issue, mail us your mobile details at contact@cinehub.com and we'll have our tech nerds take a shot at it.</p>
+				<p><strong>Why can't I register onto the app?</strong></p>
+				<p id="ans">If you can't register on the app, refresh your page and try again. Are you still facing the same problem after that? Send us an email at contact@cinehub.com, and we'll try to fix this.</p>
+				<p><strong>Some content available, some not in international locations why is this?</strong></p>
+				<p id="ans">Unfortunately, if you're outside india, then you won't be able to access our content. We're slowly building our reach-bear with us, we can't wait to be a 100% available either!</p>
+				<p><strong>I would like more content here like xyz,abc.</strong></p>
+				<p id="last-p">It's always great to hear your feedback. Write your suggestions about content to contact@cinehub.com and we'll see what we can do about it.</p>
+		</div>
+		<footer>
+			<div>
+				<ul type="none">
+					<li><a href="About-us.html" id="left-foot">About CineHub</a></li>
+					<li><a href="Terms-of-use.html" id="left-foot">Terms Of Use</a></li>
+					<li><a href="Privacy-policy.html" id="left-foot">Privacy Policy</a></li>
+					<li><a href="FAQ.html" id="left-foot" class="active-foot">FAQ</a></li>
+					<li><a href="FeedBack.html" id="left-foot">FeedBack</a></li>
+					<li id="right-foot">Connect with us</li>
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+			<div>
+				<ul type="none">
+					<li id="copyright">Copyright &copy; 2019 CINEHUB</li>
+					<li><a href="#"><i class="fab fa-twitter-square fa-2x" id="twitter-icon"></i></a></li>
+					<li id="facebook"><a href="#"><i class="fab fa-facebook-square fa-2x" id="facebook-icon" ></i></a></li>
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+			<div style="clear: both;"></div>
+		</footer>
+	</div>
+	<div class="Signin">
+		<div class="icon-signin">
+			<i class="fas fa-times fa-2x"></i>
+		</div>
+		<div class="header">
+			<h2>Sign in</h2>
+		</div>
+		<form>
+			<div class="input-group">
+				<label>Username</label>
+				<input type="text" name="username" placeholder="Type your username" id="id-1" required>
+			</div>
+			<div class="input-group">
+				<label>Password</label>
+				<input type="password" name="password_1" placeholder="Type your password" id="password" required>
+			</div>
+			<div class="input-group">
+				<button onclick="error_1();" type="submit" class="btn" name="register_btn">Sign in</button>
+			</div>
+			<p>
+				Not yet a member? <a id="Registration" style="color: blue;">REGISTRATION</a>
+			</p>
+		</form>
+	</div>
+	<div class="Registration">
+		<div class="icon-registration">
+			<i class="fas fa-times fa-2x"></i>
+		</div>
+		<div class="header">
+			<h2>Register</h2>
+		</div>
+		<form>
+			<div class="input-group">
+				<label>Username</label>
+				<input type="text" name="username" placeholder="Type your username" id="id-2" required>
+			</div>
+			<div class="input-group">
+				<label>Email</label>
+				<input type="email" name="email" placeholder="email@gmail.com" id="email" required>
+			</div>
+			<div class="input-group">
+				<label>Password</label>
+				<input type="password" name="password_1" placeholder="Type your password" id="password_1" required>
+			</div>
+			<div class="input-group">
+				<label>Confirm password</label>
+				<input type="password" name="password_2" placeholder="Retype your password" id="password_2" required>
+			</div>
+			<div class="input-group">
+				<button onclick="error_2();" type="submit" class="btn" name="register_btn">Register</button>
+			</div>
+			<p>
+				Already a member? <a id="Signin" style="color: blue;">SIGN IN</a>
+			</p>
+		</form>
+	</div>
+	<div class="Search">
+		<div class="icon-search">
+			<i class="fas fa-times fa-2x"></i>
+		</div>
+    	<form class="search-form">
+      		<input type="text" placeholder="Search..." name="search">
+      		<button type="submit"><i class="fa fa-search fa-lg"></i></button>
+    	</form>
+    </div>
+</body>
+</html>

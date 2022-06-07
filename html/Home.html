@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CINEHUB-Watch the best & latest  movies, shows, motivational video and web series</title>
+	<link rel="icon" type="image/ico" href="../Image/cine hub.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/Home.css">
+	<link rel="stylesheet" type="text/css" href="../css/fontawesome.css">
+	<script src="../js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active');
+				$('nav').toggleClass('active');
+			});
+			$('#signin').click(function(){
+				$('.Signin').show();
+				$('.body').hide();
+			});	
+			$('.icon-signin').click(function(){
+				$('.Signin').hide();
+				$('.body').show();
+			});
+			$('#Registration').click(function(){
+				$('.Registration').show();
+				$('.body').hide();
+				$('.Signin').hide();
+			});
+			$('.icon-registration').click(function(){
+				$('.Registration').hide();
+				$('.body').show();
+			});
+			$('#Signin').click(function(){
+				$('.Signin').show();
+				$('.body').hide();
+				$('.Registration').hide();
+			});	
+			$('#searchlogo').click(function(){
+				$('.Search').show();
+				$('.body').hide();
+			});
+			$('.icon-search').click(function(){
+				$('.Search').hide();
+				$('.body').show();
+			});
+		});
+	</script>
+	<script>
+		function error_1(){
+			var password = document.getElementById("password").value;
+			var username = document.getElementById("id-1").value;
+			alert('Sign In\nUsername: '+username+'\nPassword: '+password);
+		}
+		function error_2(){
+			var password_1 = document.getElementById("password_1").value;
+			var password_2 = document.getElementById("password_2").value;
+			var username = document.getElementById("id-2").value;
+			var email = document.getElementById("email").value;
+			if (password_1==password_2){
+				alert('Your account have register\nUsername: '+username+'\nPassword: '+password_1+'\nEmail: '+email);
+			}else{
+				alert('Password are not same, Retype the password');
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="body">
+		<header>
+			<a id="searchlogo"><i class="fas fa-search fa-lg"></i></a>
+			<a href="Home.html"><img src="../Image/cine hub.png" id="logo"></a>
+			<div class="menu-toggle"></div>
+			<nav class="navbar">
+				<ul type="none">
+					<li><a href="Home.html" id="left-nav" class="active">HOME</a></li>
+					<li><a href="Movies.html" id="left-nav">MOVIES</a></li>
+					<li><a href="Shows.html" id="left-nav">SHOWS</a></li>
+					<li><a href="Webseries.html" id="left-nav">WEB SERIES</a></li>
+					<li><a href="Motivational.html" id="left-nav">MOTIVATIONAL</a></li>
+					<li><a id="signin"><i class="far fa-user-circle fa-lg" id="userlogo"></i>SIGN IN</a></li>
+					<div style="clear: both;"></div>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+		<div id="slider">
+			<figure>
+				<a href="Avenger.html"><img src="../Image/Avenger-h.jpg"></a>
+				<a href="TKSS.html"><img src="../Image/TKSS.jpg"></a>
+				<a href="#"><img src="../Image/Sacred games-2.jpg"></a>
+				<a href="War.html"><img src="../Image/War.jpg"></a>
+				<a href="3-Idiot.html"><img src="../Image/3 Idiot.jpg"></a>
+			</figure>
+		</div>
+		<div id="container">
+			<div id="container-1">
+				<div id="container-2">
+					<h4>MOVIES<i class="fas fa-chevron-right" id="next-icon"></i></h4>
+				</div>
+				<div id="view-more">
+					<a href="Movies.html"><h4>View more...</h4></a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div id="container-img">
+				<figure>
+					<a href="War.html"><img src="../Image/War.jpg"></a>
+					<a href="Avenger.html"><img src="../Image/Avenger-h.jpg"></a>
+					<a href="Jersey.html"><img src="../Image/Jersey.jpg"></a>
+				</figure>
+			</div>
+			<div id="container-1">
+				<div id="container-2">
+					<h4>SHOWS<i class="fas fa-chevron-right" id="next-icon"></i></h4>
+				</div>
+				<div id="view-more">
+					<a href="Shows.html"><h4>View more...</h4></a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div id="container-img">
+				<figure>
+					<a href="TKSS.html"><img src="../Image/TKSS.jpg"></a>
+					<a href="M-P.html"><img src="../Image/M-P.jpg"></a>
+					<a href="Originals.html"><img src="../Image/Originals.jpg"></a>
+				</figure>
+			</div>
+			<div id="container-1">
+				<div id="container-2">
+					<h4>WEB SERIES<i class="fas fa-chevron-right" id="next-icon"></i></h4>
+				</div>
+				<div id="view-more">
+					<a href="Webseries.html"><h4>View more...</h4></a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div id="container-img">
+				<figure>
+					<a href="#"><img src="../Image/Sacred games-2.jpg"></a>
+					<a href="TFM.html"><img src="../Image/TFM.png"></a>
+					<a href="#"><img src="../Image/CLACM.jpg"></a>
+				</figure>
+			</div>
+			<div id="container-1">
+				<div id="container-2">
+					<h4>MOTIVATIONAL<i class="fas fa-chevron-right" id="next-icon"></i></h4>
+				</div>
+				<div id="view-more">
+					<a href="Motivational.html"><h4>View more...</h4></a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div id="container-img">
+				<figure>
+					<a href="TPOH.html"><img src="../Image/TPOH.jpg"></a>
+					<a href="#"><img src="../Image/you can do it.jpg"></a>
+					<a href="3-Idiot.html"><img src="../Image/3 Idiot.jpg"></a>
+				</figure>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<ul type="none">
+					<li><a href="About-us.html" id="left-foot">About CineHub</a></li>
+					<li><a href="Terms-of-use.html" id="left-foot">Terms Of Use</a></li>
+					<li><a href="Privacy-policy.html" id="left-foot">Privacy Policy</a></li>
+					<li><a href="FAQ.html" id="left-foot">FAQ</a></li>
+					<li><a href="FeedBack.html" id="left-foot">FeedBack</a></li>
+					<li id="right-foot">Connect with us</li>
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+			<div>
+				<ul type="none">
+					<li id="copyright">Copyright &copy; 2019 CINEHUB</li>
+					<li><a href="#"><i class="fab fa-twitter-square fa-2x" id="twitter-icon"></i></a></li>
+					<li id="facebook"><a href="#"><i class="fab fa-facebook-square fa-2x" id="facebook-icon" ></i></a></li>
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+			<div style="clear: both;"></div>
+		</footer>
+	</div>
+	<div class="Signin">
+		<div class="icon-signin">
+			<i class="fas fa-times fa-2x"></i>
+		</div>
+		<div class="header">
+			<h2>Sign in</h2>
+		</div>
+		<form>
+			<div class="input-group">
+				<label>Username</label>
+				<input type="text" name="username" placeholder="Type your username" id="id-1" required>
+			</div>
+			<div class="input-group">
+				<label>Password</label>
+				<input type="password" name="password_1" placeholder="Type your password" id="password" required>
+			</div>
+			<div class="input-group">
+				<button onclick="error_1();" type="submit" class="btn" name="register_btn">Sign in</button>
+			</div>
+			<p>
+				Not yet a member? <a id="Registration" style="color: blue;">REGISTRATION</a>
+			</p>
+		</form>
+	</div>
+	<div class="Registration">
+		<div class="icon-registration">
+			<i class="fas fa-times fa-2x"></i>
+		</div>
+		<div class="header">
+			<h2>Register</h2>
+		</div>
+		<form>
+			<div class="input-group">
+				<label>Username</label>
+				<input type="text" name="username" placeholder="Type your username" id="id-2" required>
+			</div>
+			<div class="input-group">
+				<label>Email</label>
+				<input type="email" name="email" placeholder="email@gmail.com" id="email" required>
+			</div>
+			<div class="input-group">
+				<label>Password</label>
+				<input type="password" name="password_1" placeholder="Type your password" id="password_1" required>
+			</div>
+			<div class="input-group">
+				<label>Confirm password</label>
+				<input type="password" name="password_2" placeholder="Retype your password" id="password_2" required>
+			</div>
+			<div class="input-group">
+				<button onclick="error_2();" type="submit" class="btn" name="register_btn">Register</button>
+			</div>
+			<p>
+				Already a member? <a id="Signin" style="color: blue;">SIGN IN</a>
+			</p>
+		</form>
+	</div>
+	<div class="Search">
+		<div class="icon-search">
+			<i class="fas fa-times fa-2x"></i>
+		</div>
+    	<form class="search-form">
+      		<input type="text" placeholder="Search..." name="search">
+      		<button type="submit"><i class="fa fa-search fa-lg"></i></button>
+    	</form>
+    </div>
+</body>
+</html>

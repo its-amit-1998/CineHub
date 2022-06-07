@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CINEHUB-Watch the best & latest  movies, shows, motivational video and web series</title>
+	<link rel="icon" type="image/ico" href="../Image/cine hub.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/About-us.css">
+	<link rel="stylesheet" type="text/css" href="../css/fontawesome.css">
+	<script src="../js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active');
+				$('nav').toggleClass('active');
+			});
+			$('#signin').click(function(){
+				$('.Signin').show();
+				$('.body').hide();
+			});	
+			$('.icon-signin').click(function(){
+				$('.Signin').hide();
+				$('.body').show();
+			});
+			$('#Registration').click(function(){
+				$('.Registration').show();
+				$('.body').hide();
+				$('.Signin').hide();
+			});
+			$('.icon-registration').click(function(){
+				$('.Registration').hide();
+				$('.body').show();
+			});
+			$('#Signin').click(function(){
+				$('.Signin').show();
+				$('.body').hide();
+				$('.Registration').hide();
+			});	
+			$('#searchlogo').click(function(){
+				$('.Search').show();
+				$('.body').hide();
+			});
+			$('.icon-search').click(function(){
+				$('.Search').hide();
+				$('.body').show();
+			});
+		});
+	</script>
+	<script>
+		function error_1(){
+			var password = document.getElementById("password").value;
+			var username = document.getElementById("id-1").value;
+			alert('Sign In\nUsername: '+username+'\nPassword: '+password);
+		}
+		function error_2(){
+			var password_1 = document.getElementById("password_1").value;
+			var password_2 = document.getElementById("password_2").value;
+			var username = document.getElementById("id-2").value;
+			var email = document.getElementById("email").value;
+			if (password_1==password_2){
+				alert('Your account have register\nUsername: '+username+'\nPassword: '+password_1+'\nEmail: '+email);
+			}else{
+				alert('Password are not same, Retype the password');
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="body">
+		<header>
+			<a id="searchlogo"><i class="fas fa-search fa-lg"></i></a>
+			<a href="Home.html"><img src="../Image/cine hub.png" id="logo"></a>
+			<div class="menu-toggle"></div>
+			<nav class="navbar">
+				<ul type="none">
+					<li><a href="Home.html" id="left-nav">HOME</a></li>
+					<li><a href="Movies.html" id="left-nav">MOVIES</a></li>
+					<li><a href="Shows.html" id="left-nav">SHOWS</a></li>
+					<li><a href="Webseries.html" id="left-nav">WEB SERIES</a></li>
+					<li><a href="Motivational.html" id="left-nav">MOTIVATIONAL</a></li>
+					<li><a id="signin"><i class="far fa-user-circle fa-lg" id="userlogo"></i>SIGN IN</a></li>
+					<div style="clear: both;"></div>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+		<div id="image"><img src="../Image/cine hub.png"></div>
+		<div id="container">
+			<h1>About Us</h1>
+				<p>CineHub is an online video store platform owned by Amit Singh. CineHub currently offers over hours of TV content and movies accross 2 languages. The purpose of developing this "CineHub" is to give a platform for user who like to see a movie at home.</p>
+			
+			<h2>A VIDEO EXPERIENCE LIKE NO OTHER</h2>
+				<p><strong>Seamless Video Playback -</strong> Our adaptive video streaming technology ensures that the best possible video quality is played back automatically based on the available bandwidth, therefore making it a great video experience on both mobile networks as well as WiFi internet connections. Our video is optimized to play on mobile networks with inconsistent throughput so that our users donâ€™t have to compromise on their experience on the low end, and play HD quality video on the top end of bandwidth availability. Additionally, our users can manually select the quality of video that suits their taste.</p>
+				<p><strong>Smart Search -</strong> Content search on CineHub has been optimized to reduce complexity and delay in accessing content. Accurate search results, with lightning fast autocomplete suggestions navigate users to video with minimal navigation friction and ease of use.</p>
+				<p id="last-p"><strong>Friendly User Interface -</strong> Content organization on CineHub is a result of a thoughtful user experience approach and strong design principles that ensure that the user is not overwhelmed with the breadth of content available. Using a mix of algorithms and human curation, users at any stage of their interaction with Hotstar will discover content and see their experience evolve with their interaction patterns over time.</p>
+		</div>
+		<footer>
+			<div>
+				<ul type="none">
+					<li><a href="About-us.html" id="left-foot" class="active-foot">About CineHub</a></li>
+					<li><a href="Terms-of-use.html" id="left-foot">Terms Of Use</a></li>
+					<li><a href="Privacy-policy.html" id="left-foot">Privacy Policy</a></li>
+					<li><a href="FAQ.html" id="left-foot">FAQ</a></li>
+					<li><a href="FeedBack.html" id="left-foot">FeedBack</a></li>
+					<li id="right-foot">Connect with us</li>
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+			<div>
+				<ul type="none">
+					<li id="copyright">Copyright &copy; 2019 CINEHUB</li>
+					<li><a href="#"><i class="fab fa-twitter-square fa-2x" id="twitter-icon"></i></a></li>
+					<li id="facebook"><a href="#"><i class="fab fa-facebook-square fa-2x" id="facebook-icon" ></i></a></li>
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+			<div style="clear: both;"></div>
+		</footer>
+	</div>
+	<div class="Signin">
+		<div class="icon-signin">
+			<i class="fas fa-times fa-2x"></i>
+		</div>
+		<div class="header">
+			<h2>Sign in</h2>
+		</div>
+		<form>
+			<div class="input-group">
+				<label>Username</label>
+				<input type="text" name="username" placeholder="Type your username" id="id-1" required>
+			</div>
+			<div class="input-group">
+				<label>Password</label>
+				<input type="password" name="password_1" placeholder="Type your password" id="password" required>
+			</div>
+			<div class="input-group">
+				<button onclick="error_1();" type="submit" class="btn" name="register_btn">Sign in</button>
+			</div>
+			<p>
+				Not yet a member? <a id="Registration" style="color: blue;">REGISTRATION</a>
+			</p>
+		</form>
+	</div>
+	<div class="Registration">
+		<div class="icon-registration">
+			<i class="fas fa-times fa-2x"></i>
+		</div>
+		<div class="header">
+			<h2>Register</h2>
+		</div>
+		<form>
+			<div class="input-group">
+				<label>Username</label>
+				<input type="text" name="username" placeholder="Type your username" id="id-2" required>
+			</div>
+			<div class="input-group">
+				<label>Email</label>
+				<input type="email" name="email" placeholder="email@gmail.com" id="email" required>
+			</div>
+			<div class="input-group">
+				<label>Password</label>
+				<input type="password" name="password_1" placeholder="Type your password" id="password_1" required>
+			</div>
+			<div class="input-group">
+				<label>Confirm password</label>
+				<input type="password" name="password_2" placeholder="Retype your password" id="password_2" required>
+			</div>
+			<div class="input-group">
+				<button onclick="error_2();" type="submit" class="btn" name="register_btn">Register</button>
+			</div>
+			<p>
+				Already a member? <a id="Signin" style="color: blue;">SIGN IN</a>
+			</p>
+		</form>
+	</div>
+	<div class="Search">
+		<div class="icon-search">
+			<i class="fas fa-times fa-2x"></i>
+		</div>
+    	<form class="search-form">
+      		<input type="text" placeholder="Search..." name="search">
+      		<button type="submit"><i class="fa fa-search fa-lg"></i></button>
+    	</form>
+    </div>
+</body>
+</html>
